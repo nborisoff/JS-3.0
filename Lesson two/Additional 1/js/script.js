@@ -49,8 +49,14 @@ for (let i = 1; i < 7; i++) {
 	}
 }
 
+if (today == 6){
+	document.write('<b>' + '<i>' + week[6] + '</i>' +'</b>' + '<br>');
+} else {
+	document.write('<b>' + week[6] +'</b>' + '<br>');
+}
+
 if (today == 0){
 	document.write('<b>' + '<i>' + week[0] + '</i>' +'</b>');
 } else {
 	document.write('<b>' + week[0] +'</b>');
-}*/
+}

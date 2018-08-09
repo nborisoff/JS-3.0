@@ -1,0 +1,35 @@
+let week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+
+for (let i = 0; i < 7; i++) {
+	if (i<3) {
+		document.write( week[i] + '<br>');
+	} else if(week[i] == 'Четверг') {
+		document.write('<i>' + week[i] +' </i>' + '<br>');
+		} else if (i>4) {
+			document.write('<b>' + week[i] +'</b>' + '<br>');
+			} else {
+				document.write( week[i] + '<br>');
+			}
+}
+
+let arr = [];
+
+for (let i = 0; i < 7; i++) {
+	
+	let a = prompt("Введите многозначное число");
+
+	if (a != null && a != '' && a.length > 3 ) {
+		arr[i] = a;
+	} else {
+		alert('Многозначными считают числа больше тысячи. Попробуйте еще раз.');
+		i--;
+	}
+}
+
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+	if (arr[i][0] === '3' || arr[i][0] === '7' ) {
+		console.log(arr[i]);
+	}
+}

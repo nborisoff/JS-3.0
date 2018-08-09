@@ -33,3 +33,19 @@ for (let i = 0; i < arr.length; i++) {
 		console.log(arr[i]);
 	}
 }
+
+//Способ с динамической подсветкой курсивом текущего дня недели
+/*let week = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+	date = new Date(),
+	today = date.getDay();
+
+for (let i = 1; i < 7; i++) {
+	if (i == 6) {
+		document.write('<b>' + week[i] +'</b>' + '<br>');
+	} else if(i == today) {
+		document.write('<i>' + week[today] +'</i>' + '<br>');
+	} else {
+		document.write(week[i] + '<br>');
+	}
+}
+document.write('<b>' + week[0] +'</b>');*/

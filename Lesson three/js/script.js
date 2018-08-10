@@ -85,18 +85,13 @@ function hire() {
 		let a = prompt("Введите имя сотрудника");	
 
 		if ((typeof(a)) === 'string' && a != null && a != '' && a.length < 50 ) {
-			temp[i] = a;
+			mainList.employers[i] = a;
 		} else {
 			i--;
 		}
 	}
-
-	mainList.employers.first = '1 - ' + temp[0];
-	mainList.employers.second = '2 - ' + temp[1];
-	mainList.employers.third = '3 - ' + temp[2];
-	mainList.employers.fourth = '4 - ' + temp[3];
 }
 
-//hire();
+hire();
 
 console.log(mainList);

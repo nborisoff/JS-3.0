@@ -80,7 +80,7 @@ console.log(price);
 function hire() {
 	let temp = [];
 
-	for (let i = 0; i < 4; i++) {
+	for (let i = 1; i < 5; i++) {
 
 		let a = prompt("Введите имя сотрудника");	
 

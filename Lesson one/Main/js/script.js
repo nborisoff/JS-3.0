@@ -1,6 +1,6 @@
 let budget = +prompt("Ваш бюджет на месяц?"),
 	shopName = prompt("Название вашего магазина?"),
-	obj = {
+	mainList = {
 		budget,
 		shopName,
 		shopGoods: [],

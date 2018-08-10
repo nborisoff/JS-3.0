@@ -6,7 +6,7 @@ let budget = +prompt("Ваш бюджет на месяц?"),
 		shopGoods: [],
 		employers: {},
 		open
-}
+};
 
 obj.shopGoods = [prompt("Какой тип товаров будем продавать?"),
 				 prompt("Какой тип товаров будем продавать?"), 

@@ -20,4 +20,4 @@ title.textContent = 'Мы продаем только подлинную тех�
 
 adv[0].remove();
 
-question.textContent = prompt('Как вы относитесь к технике Apple?','');;
+question.textContent = prompt('Как вы относитесь к технике Apple?','');

@@ -17,4 +17,4 @@ let openButton = document.getElementById('open-btn'),
 	time = document.querySelector('.time-value'),
 	countBudget = document.querySelector('.count-budget-value'),
     
-	hireEmployers = document.querySelectorAll('.main-functions .hire-employers-item'); 
+	hireEmployers = document.querySelectorAll('.hire-employers-item'); 

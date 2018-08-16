@@ -20,7 +20,13 @@ let openButton = document.getElementById('open-btn'),
 
 	hireEmployers = document.querySelectorAll('.hire-employers-item'),
 
-	sum;
+	sum,
+    	name;
+
+openButton.setAttribute('disabled', 'disabled');
+goodsButton.setAttribute('disabled', 'disabled');
+budgetButton.setAttribute('disabled', 'disabled');
+employerButton.setAttribute('disabled', 'disabled');
 
 openButton.addEventListener('click', () => {
 	sum = prompt("Ваш бюджет на месяц?", "");
@@ -179,21 +185,5 @@ let	mainList = {
 		}
 	}
 }
-
-/*mainList.chooseGoods();
-
-mainList.workTime(time);
-
-mainList.budgetCalc();
-
-mainList.discountCalc();
-
-mainList.hire();
-
-mainList.chooseShopItems();
-
-for (let key in mainList) {
-	console.log("Наш магазин включает в себя: " + key + " : " + mainList[key]);
-}*/
 
 console.log(mainList);

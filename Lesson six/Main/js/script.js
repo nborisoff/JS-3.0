@@ -44,16 +44,6 @@ function disBtnGoods() {
   goodsButton.disabled = this.value.trim().length === 0;
 }
 
-goodsItem[0].addEventListener('input', disBtnGoods);
-goodsItem[1].addEventListener('input', disBtnGoods);
-goodsItem[2].addEventListener('input', disBtnGoods);
-goodsItem[3].addEventListener('input', disBtnGoods);
-
-disBtnGoods.call(goodsItem[0]);
-disBtnGoods.call(goodsItem[1]);
-disBtnGoods.call(goodsItem[2]);
-disBtnGoods.call(goodsItem[3]);
-
 goodsButton.addEventListener('click', () => {
 	for (let i = 0; i < goodsItem.length; i++) {		
 		let a = goodsItem[i].value;
@@ -96,6 +86,24 @@ timeValue.addEventListener('change', () => {
 		goodsButton.removeAttribute('disabled');
 		budgetButton.removeAttribute('disabled');
 		employerButton.removeAttribute('disabled');
+		
+		goodsItem[0].addEventListener('input', disBtnGoods);
+		goodsItem[1].addEventListener('input', disBtnGoods);
+		goodsItem[2].addEventListener('input', disBtnGoods);
+		goodsItem[3].addEventListener('input', disBtnGoods);
+
+		disBtnGoods.call(goodsItem[0]);
+		disBtnGoods.call(goodsItem[1]);
+		disBtnGoods.call(goodsItem[2]);
+		disBtnGoods.call(goodsItem[3]);
+
+		hireEmployers[0].addEventListener('input', disBtnEmployer);
+		hireEmployers[1].addEventListener('input', disBtnEmployer);
+		hireEmployers[2].addEventListener('input', disBtnEmployer);
+
+		disBtnEmployer.call(hireEmployers[0]);
+		disBtnEmployer.call(hireEmployers[1]);
+		disBtnEmployer.call(hireEmployers[2]);
 		} else if(time < 24) {
 			console.log('Уже слишком поздно!');
 			mainList.open = false;
@@ -129,14 +137,6 @@ budgetButton.addEventListener('click', () => {
 function disBtnEmployer() {
   employerButton.disabled = this.value.trim().length === 0;
 }
-
-hireEmployers[0].addEventListener('input', disBtnEmployer);
-hireEmployers[1].addEventListener('input', disBtnEmployer);
-hireEmployers[2].addEventListener('input', disBtnEmployer);
-
-disBtnEmployer.call(hireEmployers[0]);
-disBtnEmployer.call(hireEmployers[1]);
-disBtnEmployer.call(hireEmployers[2]);
 
 employerButton.addEventListener('click', () => {
 

@@ -5,9 +5,7 @@ let menuItem = document.getElementsByClassName('menu-item'),
 	adv = document.getElementsByClassName('adv'),
 	question = document.getElementById('prompt');
 	
-
-menuItem[1].textContent = 'Второй пункт';
-menuItem[2].textContent = 'Третий пункт';
+ul.insertBefore(menuItem[2], menuItem[1]);
 
 let li = document.createElement('li');
 li.classList.add("menu-item");

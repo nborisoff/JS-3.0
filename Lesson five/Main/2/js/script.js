@@ -13,8 +13,8 @@ let openButton = document.getElementById('open-btn'),
 	buttonTwo = document.getElementsByTagName('button')[2],
 	buttonThree = document.getElementsByTagName('button')[3],
     
-	chooseItem = document.querySelector('.main-functions .choose-item'),
-	time = document.querySelector('.main-functions .time-value'),
-	countBudget = document.querySelector('.main-functions .count-budget-value'),
+	chooseItem = document.querySelector('.choose-item'),
+	time = document.querySelector('.time-value'),
+	countBudget = document.querySelector('.count-budget-value'),
     
 	hireEmployers = document.querySelectorAll('.main-functions .hire-employers-item'); 

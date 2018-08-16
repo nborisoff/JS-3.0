@@ -67,6 +67,7 @@ timeValue.addEventListener('change', () => {
 		goodsButton.setAttribute('disabled', 'disabled');
 		budgetButton.setAttribute('disabled', 'disabled');
 		employerButton.setAttribute('disabled', 'disabled');
+		discountValue.style.backgroundColor = 'red';
 	} else if(time > 8 && time < 20) {
 		console.log('Время работать!');
 		mainList.open = true;
@@ -81,6 +82,7 @@ timeValue.addEventListener('change', () => {
 			goodsButton.setAttribute('disabled', 'disabled');
 			budgetButton.setAttribute('disabled', 'disabled');
 			employerButton.setAttribute('disabled', 'disabled');
+			discountValue.style.backgroundColor = 'red';
 			} else {
 				console.log('В сутках только 24 часа!')
 				mainList.open = false;
@@ -88,6 +90,7 @@ timeValue.addEventListener('change', () => {
 				goodsButton.setAttribute('disabled', 'disabled');
 				budgetButton.setAttribute('disabled', 'disabled');
 				employerButton.setAttribute('disabled', 'disabled');
+				discountValue.style.backgroundColor = 'red';
 			}
 
 	if (mainList.open == true) {

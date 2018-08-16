@@ -24,14 +24,35 @@ let openButton = document.getElementById('open-btn'),
 
 openButton.addEventListener('click', () => {
 	sum = prompt("Ваш бюджет на месяц?", "");
-
-	while (isNaN(sum) || sum == "" || sum == null) {
+	
+	while (isNaN(sum) || sum == '' || sum == null || sum.replace(/\s/g,'') == '') {
 		sum = prompt("Ваш бюджет на месяц?", "");
 	}
 
 	budgetValue.textContent = sum;
-	nameValue.textContent = prompt("Название вашего магазина?", "").toUpperCase();
+
+	name = prompt("Название вашего магазина?", "");
+
+	while (name == '' || name == null || name.replace(/\s/g,'') == '') {
+		name = prompt("Название вашего магазина?", "");
+	}
+
+	nameValue.textContent = name.toUpperCase();
 });
+
+function disBtnGoods() {
+  goodsButton.disabled = this.value.trim().length === 0;
+}
+
+goodsItem[0].addEventListener('input', disBtnGoods);
+goodsItem[1].addEventListener('input', disBtnGoods);
+goodsItem[2].addEventListener('input', disBtnGoods);
+goodsItem[3].addEventListener('input', disBtnGoods);
+
+disBtnGoods.call(goodsItem[0]);
+disBtnGoods.call(goodsItem[1]);
+disBtnGoods.call(goodsItem[2]);
+disBtnGoods.call(goodsItem[3]);
 
 goodsButton.addEventListener('click', () => {
 	for (let i = 0; i < goodsItem.length; i++) {		
@@ -104,6 +125,18 @@ countBudget.setAttribute('disabled', 'disabled');
 budgetButton.addEventListener('click', () => {
 	countBudget.value = sum / 30;
 });
+
+function disBtnEmployer() {
+  employerButton.disabled = this.value.trim().length === 0;
+}
+
+hireEmployers[0].addEventListener('input', disBtnEmployer);
+hireEmployers[1].addEventListener('input', disBtnEmployer);
+hireEmployers[2].addEventListener('input', disBtnEmployer);
+
+disBtnEmployer.call(hireEmployers[0]);
+disBtnEmployer.call(hireEmployers[1]);
+disBtnEmployer.call(hireEmployers[2]);
 
 employerButton.addEventListener('click', () => {
 

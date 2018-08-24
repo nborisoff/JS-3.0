@@ -148,7 +148,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	let description = document.querySelectorAll('.description-btn');
 
-	for (let i = 0; i < description.length; i++) {
+	for (let i = 0; i < 4; i++) {
 		description[i].addEventListener('click', function() {
 			overlay.style.display = 'block';
 			document.body.style.overflow = 'hidden';

@@ -21,7 +21,8 @@ let openButton = document.getElementById('open-btn'),
 	hireEmployers = document.querySelectorAll('.hire-employers-item'),
 
 	sum,
-    	name;
+	name;
+
 
 openButton.setAttribute('disabled', 'disabled');
 goodsButton.setAttribute('disabled', 'disabled');
@@ -30,7 +31,7 @@ employerButton.setAttribute('disabled', 'disabled');
 
 openButton.addEventListener('click', () => {
 	sum = prompt("Ваш бюджет на месяц?", "");
-	
+
 	while (isNaN(sum) || sum == '' || sum == null || sum.replace(/\s/g,'') == '') {
 		sum = prompt("Ваш бюджет на месяц?", "");
 	}
@@ -92,7 +93,7 @@ timeValue.addEventListener('change', () => {
 		goodsButton.removeAttribute('disabled');
 		budgetButton.removeAttribute('disabled');
 		employerButton.removeAttribute('disabled');
-		
+
 		goodsItem[0].addEventListener('input', disBtnGoods);
 		goodsItem[1].addEventListener('input', disBtnGoods);
 		goodsItem[2].addEventListener('input', disBtnGoods);
@@ -172,18 +173,7 @@ let	mainList = {
 	employers: {},
 	open: false,
 	discount: true,
-	shopItems: [],
-	discountCalc: function discountCalc() {
-		price = prompt("Введите цену", "");
-
-		while (isNaN(price) || price == "" || price == null) {
-			price = prompt("Введите цену", "");
-		}
-
-		if (mainList.discount == true) {
-			price = price * 0.8;	
-		}
-	}
+	shopItems: []
 }
 
 console.log(mainList);

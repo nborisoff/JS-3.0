@@ -24,8 +24,7 @@ let arr = [20, 33, 1, "Человек", 2, 3];
 	sum = 0;
 
 for(var i = 0; i < arr.length; i++){
-    if (isNaN(arr[i])) {
-	} else {
+    if (!isNaN(arr[i])) {	
 		sum += Math.pow(arr[i],3);
 	}
 }

@@ -5,10 +5,10 @@ let budget = +prompt("Ваш бюджет на месяц?"),
 		shopName,
 		shopGoods: [],
 		employers: {},
-		open
-};
+		open: true
+}
 
-obj.shopGoods = [prompt("Какой тип товаров будем продавать?"),
+mainList.shopGoods = [prompt("Какой тип товаров будем продавать?"),
 				 prompt("Какой тип товаров будем продавать?"), 
 				 prompt("Какой тип товаров будем продавать?")];
 

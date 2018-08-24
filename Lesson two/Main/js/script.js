@@ -1,13 +1,13 @@
 let sum = +prompt("Ваш бюджет на месяц?"),
 	name = prompt("Название вашего магазина?"),
-	time = 19,
+	time = 19;
 	mainList = {
 		budget: sum,
 		shopName: name,
 		shopGoods: [],
 		employers: {},
 		open: false
-};
+}
 
 
 

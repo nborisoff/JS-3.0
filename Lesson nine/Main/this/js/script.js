@@ -5,4 +5,4 @@ function showUser(surname, name) {
 	}
 
 
-showUser.call(age, 'Borisov', 'Nikita');
+showUser.call(age,'Borisov', 'Nikita');

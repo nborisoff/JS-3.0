@@ -5,6 +5,7 @@ let menuItem = document.getElementsByClassName('menu-item'),
 	adv = document.getElementsByClassName('adv'),
 	question = document.getElementById('prompt');
 	
+
 ul.insertBefore(menuItem[2], menuItem[1]);
 
 let li = document.createElement('li');

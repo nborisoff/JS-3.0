@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 	let menu = document.querySelectorAll('[href^="#"]'),
-    speed = 0.3;  
+    	speed = 0.3;  
 
 	for (let i = 0; i < menu.length; i++) {
 	    menu[i].addEventListener('click', function(e) {

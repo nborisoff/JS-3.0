@@ -285,7 +285,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	persons.addEventListener('change', function() {
 		personSum = +this.value;
 		total = (daySum + personSum)*4000;
-		if (restDays.value == '' || persons.value == '') {
+		if (restDays.value == 0 || persons.value == 0) {
 			totalValue.innerHTML = 0;
 		} else {
 			totalValue.innerHTML = total;
@@ -295,7 +295,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	restDays.addEventListener('change', function() {
 		daySum = +this.value;
 		total = (daySum + personSum)*4000;
-		if (persons.value == '' || restDays.value == '') {
+		if (persons.value == 0 || restDays.value == 0) {
 			totalValue.innerHTML = 0;
 		} else {
 			totalValue.innerHTML = total;
